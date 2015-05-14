@@ -1,0 +1,26 @@
+
+
+QUIZ1
+=====
+=====
+This quiz checks my ability to execute basic operations on objects in R helping me understand some basic concepts. 
+For questions 11–20 I load a dataset into R and do some basic manipulations in order to answer the questions on the quiz.
+
+Data
+____
+The zip file containing the data for questions 11–20 in this Quiz can be downloaded here:
+https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fquiz1_data.zip
+
+For this assignment you will need to unzip this file in your working directory.
+
+QUESTION1 
+---------
+
+R was developed by statisticians working at
+a)The University of Auckland
+b)Insightful
+c)StatSci
+d)The University of New South Wales
+
+Answer
+a) R was developed by statisticians working at the Univeristy of Auckland in New Zealand.
