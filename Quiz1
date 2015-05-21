@@ -85,11 +85,14 @@ d)a 2 by 3 matrix
   d)
   
 Question 7
-A key property of vectors in R is that
-elements of a vector can be of different classes
-elements of a vector can only be character or numeric
-elements of a vector all must be of the same class
-the length of a vector must be less than 32,768
+----------
+a)A key property of vectors in R is that
+b)elements of a vector can be of different classes
+c)elements of a vector can only be character or numeric
+d)elements of a vector all must be of the same class
+e)the length of a vector must be less than 32,768
+###answer
+d)
 
 Question 11
 -----------
@@ -150,7 +153,7 @@ d)129
   c)
   
   Explanation
-  > nrow(data)
+   nrow(data)
   [1] 153
   
 Question 14
@@ -194,7 +197,7 @@ d)63
   b)
 
   Explanation
-  > data[47,1]
+  data$Ozone[47]
   [1] 21
   
 Question 16
@@ -214,6 +217,9 @@ d)43
   > missingValues
   [1] 37
   
+  or else
+  length(data$Ozone[is.na(data$Ozone)])
+  37
   
 Question 17
 -----------
@@ -230,6 +236,9 @@ d)18.0
   > OzoneColMean <- mean(OzoneCol, na.rm = TRUE)
   > OzoneColMean
   [1] 42.12931
+  or else
+  mean(data$Ozone, na.rm = TRUE)
+  [1] 42.1293
   
 Question 18
 -----------
@@ -248,9 +257,10 @@ d)212.8
   > mean(dataSubset$Solar.R, na.rm = TRUE )
   [1] 212.8
   
-  > dataSubset <- data[data$Ozone > 31 & data$Temp > 90,]
-  > mean(dataSubset$Solar.R, na.rm = TRUE )
-  [1] 212.8
+  or else
+   myData <- data[data$Ozone > 31 & data$Temp > 90,]
+   mean(myData$Solar.R, na.rm = T)
+   [1] 212.8
   
   
 Question 19
@@ -270,6 +280,11 @@ d)90.2
   > tempMean
   [1] 79.1
   
+  or else
+    dData <- data[data$Month == 6,]
+    mean(dData$Temp, na.rm = T)
+    [1] 79.1
+  
   
 Question 20
 -----------
@@ -282,8 +297,7 @@ d)100
   Answer
   c)
   Explanation
-  
-  > ozoneMaxMay <- max(maySubset$Ozone, na.rm = TRUE)
-  > ozoneMaxMay
+   dData <- data[data$Month == 5,]
+  > max(dData$Ozone, na.rm = T)
   [1] 115
   
