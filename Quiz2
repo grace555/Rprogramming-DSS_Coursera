@@ -6,13 +6,13 @@ cube <- function(x, n) {
         x^3
 }
 What is the result of running
-cube(3)
-in R after defining this function?
-The number 27 is returned
-A warning is given with no value returned.
-The users is prompted to specify the value of 'n'.
-An error is returned because 'n' is not specified in the call to 'cube'
+cube(3)in R after defining this function?
+a)The number 27 is returned
+b)A warning is given with no value returned.
+c)The users is prompted to specify the value of 'n'.
+d)An error is returned because 'n' is not specified in the call to 'cube'
 
+### answer a)
 Question 2
 ----------
 
@@ -22,12 +22,12 @@ if(x > 5) {
         x <- 0
 }
 Why?
-'x' is a vector of length 10 and 'if' can only test a single logical statement.
-You cannot set 'x' to be 0 because 'x' is a vector and 0 is a scalar.
-The syntax of this R expression is incorrect.
-The expression uses curly braces.
-There are no elements in 'x' that are greater than 5
-
+a)'x' is a vector of length 10 and 'if' can only test a single logical statement.
+b)You cannot set 'x' to be 0 because 'x' is a vector and 0 is a scalar.
+c)The syntax of this R expression is incorrect.
+d)The expression uses curly braces.
+e)There are no elements in 'x' that are greater than 5
+###answer a)
 
 Question 3
 ----------
@@ -43,12 +43,12 @@ If I then run in R
 z <- 10
 f(3)
 What value is returned?
-4
-7
-10
-16
+a)4
+b)7
+c)10
+d)16
 
-
+###answer c)
 Question 4
 ----------
 Consider the following expression:
@@ -59,10 +59,11 @@ y <- if(x < 3) {
         10
 }
 What is the value of 'y' after evaluating this expression?
-5
-3
-NA
-10
+a)5
+b)3
+c)NA
+d)10
+### answer d)
 Question 5
 ----------
 Consider the following R function
@@ -79,53 +80,55 @@ h <- function(x, y = NULL, d = 3L) {
         g
 }
 Which symbol in the above function is a free variable?
-f
-z
-d
-L
-g
+a)f
+b)z
+c)d
+d)L
+e)g
+##answer b)
 
 
 Question 6
 ----------
 What is an environment in R?
-a special type of function
-a list whose elements are all functions
-an R package that only contains data
-a collection of symbol/value pairs
+a)a special type of function
+b)a list whose elements are all functions
+c)an R package that only contains data
+d)a collection of symbol/value pairs
 
-
+##answer d)
 Question 7
 ----------
 The R language uses what type of scoping rule for resolving free variables?
-global scoping
-dynamic scoping
-lexical scoping
-compilation scoping
+a)global scoping
+b)dynamic scoping
+c)lexical scoping
+d)compilation scoping
 
-
+##answer c)
 Question 8
 ----------
 How are free variables in R functions resolved?
-The values of free variables are searched for in the environment in which the function was called
-The values of free variables are searched for in the global environment
-The values of free variables are searched for in the environment in which the function was defined
-The values of free variables are searched for in the working directory
-
+a)The values of free variables are searched for in the environment in which the function was called
+b)The values of free variables are searched for in the global environment
+c)The values of free variables are searched for in the environment in which the function was defined
+d)The values of free variables are searched for in the working directory
+##answer c)
 
 Question 9
 ----------
 What is one of the consequences of the scoping rules used in R?
-R objects cannot be larger than 100 MB
-All objects can be stored on the disk
-Functions cannot be nested
-All objects must be stored in memory
-
+a)R objects cannot be larger than 100 MB
+b)All objects can be stored on the disk
+c)Functions cannot be nested
+d)All objects must be stored in memory
+###answer d)
 
 Question 10
 -----------
 In R, what is the parent frame?
-It is the package search list
-It is the environment in which a function was called
-It is always the global environment
-It is the environment in which a function was defined
+a)It is the package search list
+b)It is the environment in which a function was called
+c)It is always the global environment
+d)It is the environment in which a function was defined
+###answer b)
